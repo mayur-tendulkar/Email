@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.Mail">
+	<uses-sdk android:minSdkVersion="19" android:targetSdkVersion="25" />
+	<application android:label="Mail.Android">
+    <activity android:name="microsoft.identity.client.BrowserTabActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="msal36df6350-62d8-45f1-a66b-dcea0d12f768" android:host="auth" />
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>
